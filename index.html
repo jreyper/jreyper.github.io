@@ -6,12 +6,12 @@ title: "Javier Reyes Perdomo — CV & Repos"
 <style>
 :root{
   --bg:#d62828; /* Nuestro rojo vibrante de base */
-  --text:#f8f9fa; /* Texto blanco suave */
+  --text:#ffffff; /* ¡Todas las letras en blanco! */
   --muted:#ffb4a2; /* Tono rosado pálido para el texto atenuado */
-  --card:#212529; /* Gris muy oscuro (casi negro) para las tarjetas y elementos principales, que contrasta súper bien */
-  --line:#495057; /* Un gris oscuro para las líneas, para que no compitan con el rojo y blanco */
-  --brand:#ffc300; /* ¡Un amarillo oro brillante como color de marca principal para destacar! */
-  --brand2:#ffffff; /* He cambiado este a blanco puro para las letras que mencionaste, para que destaquen sin ser demasiado */
+  --card:#212529; /* Gris muy oscuro (casi negro) para las tarjetas y elementos principales */
+  --line:#495057; /* Un gris oscuro para las líneas */
+  --brand:#ffc300; /* Amarillo oro brillante para la marca principal */
+  --brand2:#00b4d8; /* Azul cian vibrante para acentos */
   --shadow: 0 16px 50px rgba(0, 0, 0, 0.4); /* Sombra fuerte para dar profundidad */
   --radius: 18px;
   /* Nuevas variables para el patrón */
@@ -25,7 +25,7 @@ body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
   background-color: var(--bg); /* Fondo base rojo */
-  color: var(--text);
+  color: var(--text); /* Todas las letras del body en blanco */
   /* Patrón de fondo usando múltiples gradientes */
   background-image:
     linear-gradient(45deg, var(--pattern-color) 25%, transparent 25%, transparent 75%, var(--pattern-color) 75%, var(--pattern-color)),
@@ -55,7 +55,7 @@ body{
 }
 .subtitle{
   margin: 10px 0 0;
-  color: var(--muted);
+  color: var(--muted); /* El subtítulo seguirá un tono más suave para diferenciar */
   font-size: 18px;
 }
 .section{
@@ -84,7 +84,7 @@ body{
   align-items: stretch;
   border-radius: 16px;
   overflow: hidden;
-  border: 2px solid var(--bg); /* ¡Ahora el borde del perfil es el mismo rojo que el fondo! */
+  border: 2px solid var(--bg);
 }
 .profile img{
   width: 46%;
@@ -106,12 +106,12 @@ body{
   font-size: 12px;
   border: 2px solid var(--line);
   background: var(--card);
-  color: var(--text);
+  color: var(--text); /* Texto de las pastillas en blanco */
 }
 .pill.featured{
   border-color: var(--brand2);
   background: var(--brand2);
-  color: var(--card);
+  color: var(--card); /* El texto de las pastillas destacadas lo pondré en gris oscuro para que contraste con el fondo azul cian */
 }
 .cards{
   display: grid;
@@ -164,28 +164,28 @@ body{
   border-radius: 12px;
   border: 2px solid var(--line);
   background: var(--card);
-  color: var(--text);
+  color: var(--text); /* Texto del input en blanco */
 }
 .select{
   padding: 10px 12px;
   border-radius: 12px;
   border: 2px solid var(--line);
   background: var(--card);
-  color: var(--text);
+  color: var(--text); /* Texto del select en blanco */
 }
 .btn{
   padding: 10px 12px;
   border-radius: 12px;
   border: 2px solid var(--line);
   background: var(--card);
-  color: var(--text);
+  color: var(--text); /* Texto del botón en blanco */
   cursor: pointer;
   text-decoration: none;
 }
 .btn.active{
   border-color: var(--brand);
   background: var(--brand);
-  color: var(--card);
+  color: var(--text); /* Texto del botón activo también en blanco */
 }
 .repoMeta{
   display: flex;
@@ -193,7 +193,7 @@ body{
   flex-wrap: wrap;
   align-items: center;
   font-size: 12px;
-  color: var(--muted);
+  color: var(--muted); /* Las metas de repositorio seguirán un tono más suave */
 }
 </style>
 <div class="container">
