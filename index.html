@@ -5,14 +5,14 @@ title: "Javier Reyes Perdomo — CV & Repos"
 
 <style>
 :root{
-  --bg:#8e2424; /* ¡Un rojo oscuro y profundo para el fondo, que impacte! */
-  --text:#ffffff; /* Texto blanco puro para un contraste máximo sobre el rojo */
-  --muted:#ffcccb; /* Un rosa muy pálido para elementos atenuados, que suavemente contraste con el rojo */
-  --card:#333333; /* Un gris oscuro casi negro para las tarjetas, para que resalten sobre el fondo rojo */
-  --line:#550000; /* Líneas divisorias en un rojo aún más oscuro, casi negro, para definición sutil */
-  --brand:#ffeb3b; /* ¡Un amarillo brillante y energizante para la marca principal! */
-  --brand2:#ff7043; /* Un naranja coral vibrante para los acentos, que le da un toque moderno */
-  --shadow: 0 16px 50px rgba(0, 0, 0, 0.4); /* Sombra intensa para que los elementos se despeguen del fondo */
+  --bg:#d62828; /* ¡Un rojo intenso y vibrante para el fondo principal! */
+  --text:#f8f9fa; /* Texto blanco suave para una legibilidad óptima sobre el rojo */
+  --muted:#ffb4a2; /* Un tono rosado pálido para elementos sutiles, que suaviza el rojo */
+  --card:#212529; /* Un gris muy oscuro (casi negro) para las tarjetas y elementos principales, que contrasta súper bien */
+  --line:#495057; /* Un gris oscuro para las líneas, para que no compitan con el rojo y blanco */
+  --brand:#ffc300; /* ¡Un amarillo oro brillante como color de marca principal para destacar! */
+  --brand2:#00b4d8; /* Un azul cian vibrante para acentos, creando un contraste fresco y moderno */
+  --shadow: 0 16px 50px rgba(0, 0, 0, 0.4); /* Sombra fuerte para dar profundidad */
   --radius: 18px;
 }
 *{
@@ -38,7 +38,7 @@ body{
   border: 2px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  background: var(--card); /* También el topbar en gris oscuro para que destaque */
+  background: var(--card); /* El topbar en el gris oscuro de la tarjeta */
 }
 .title{
   font-size: 44px;
@@ -75,7 +75,7 @@ body{
   align-items: stretch;
   border-radius: 16px;
   overflow: hidden;
-  border: 2px solid var(--brand2); /* Borde de la imagen en naranja coral para un toque pop */
+  border: 2px solid var(--brand); /* Borde de la imagen en amarillo brillante */
 }
 .profile img{
   width: 46%;
@@ -95,14 +95,14 @@ body{
   padding: 6px 10px;
   border-radius: 999px;
   font-size: 12px;
-  border: 2px solid var(--muted);
+  border: 2px solid var(--line);
   background: var(--card);
   color: var(--text);
 }
 .pill.featured{
-  border-color: var(--brand); /* El amarillo brillante para el borde de las pastillas destacadas */
-  background: var(--brand); /* Fondo amarillo brillante */
-  color: var(--bg); /* Texto en el color de fondo rojo para un contraste impactante */
+  border-color: var(--brand2); /* El azul cian vibrante para el borde de las pastillas destacadas */
+  background: var(--brand2); /* Fondo azul cian vibrante */
+  color: var(--card); /* Texto en gris oscuro para un contraste nítido */
 }
 .cards{
   display: grid;
@@ -130,13 +130,13 @@ body{
   gap: 10px;
 }
 .card.border-blue{
-  border-color: #00bcd4; /* Un turquesa vibrante para las tarjetas "azules" */
+  border-color: var(--brand2); /* Usamos el azul cian para las tarjetas "azules" */
 }
 .card.border-violet{
-  border-color: #9c27b0; /* Un púrpura intenso para las "violetas" */
+  border-color: #a76dcf; /* Un púrpura vivo para las "violetas" */
 }
 .card.border-emerald{
-  border-color: #4caf50; /* Un verde hoja brillante para las "verdes" */
+  border-color: #5cb85c; /* Un verde vibrante para las "verdes" */
 }
 .muted{
   color: var(--muted);
@@ -154,14 +154,14 @@ body{
   padding: 10px 12px;
   border-radius: 12px;
   border: 2px solid var(--line);
-  background: var(--bg); /* Fondo del input en rojo oscuro */
+  background: var(--card); /* Fondo del input en gris oscuro */
   color: var(--text);
 }
 .select{
   padding: 10px 12px;
   border-radius: 12px;
   border: 2px solid var(--line);
-  background: var(--bg); /* Fondo del select en rojo oscuro */
+  background: var(--card); /* Fondo del select en gris oscuro */
   color: var(--text);
 }
 .btn{
@@ -176,7 +176,7 @@ body{
 .btn.active{
   border-color: var(--brand); /* Borde del botón activo en amarillo */
   background: var(--brand); /* Fondo del botón activo en amarillo */
-  color: var(--bg); /* Texto del botón activo en rojo oscuro */
+  color: var(--card); /* Texto del botón activo en gris oscuro para un gran contraste */
 }
 .repoMeta{
   display: flex;
