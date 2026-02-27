@@ -5,14 +5,14 @@ title: "Javier Reyes Perdomo — CV & Repos"
 
 <style>
 :root{
-  --bg:#f8f9fa; /* Un blanco roto muy suave, casi crema, para una base más cálida */
-  --text:#343a40; /* Gris oscuro para el texto, manteniendo la legibilidad */
-  --muted:#6c757d; /* Gris medio para elementos atenuados, consistente */
-  --card:#ffffff; /* Las tarjetas siguen siendo blancas para que resalten */
-  --line:#dee2e6; /* Líneas divisorias suaves, un gris claro para no ser agresivas */
-  --brand:#4a69bd; /* Un azul índigo vibrante pero elegante, la estrella de la marca */
-  --brand2:#748ffc; /* Un azul lavanda más claro para acentos y elementos secundarios */
-  --shadow: 0 16px 50px rgba(0, 0, 0, 0.08); /* Sombra sutil para profundidad */
+  --bg:#f8f9fa; /* Blanco roto muy suave, para una base cálida y limpia */
+  --text:#343a40; /* Gris oscuro para el texto, buena legibilidad */
+  --muted:#6c757d; /* Gris medio para elementos atenuados */
+  --card:#ffffff; /* Las tarjetas siguen siendo blancas */
+  --line:#dee2e6; /* Líneas divisorias suaves */
+  --brand:#b02a2a; /* ¡Rojo cereza profundo y elegante para tu marca principal! */
+  --brand2:#ff6b6b; /* Un rosa coral vibrante para acentos, combina genial con el rojo */
+  --shadow: 0 16px 50px rgba(0, 0, 0, 0.08); /* Sombra sutil */
   --radius: 18px;
 }
 *{
@@ -74,7 +74,7 @@ body{
   align-items: stretch;
   border-radius: 16px;
   overflow: hidden;
-  border: 2px solid #a2bfe0; /* Un azul cielo suave para el borde de la imagen de perfil */
+  border: 2px solid #ffcccb; /* Un rosa muy suave para el borde de la imagen, que hace juego con el rojo */
 }
 .profile img{
   width: 46%;
@@ -99,9 +99,9 @@ body{
   color: var(--text);
 }
 .pill.featured{
-  border-color: #a2d2ff; /* Un azul celeste suave para las pastillas destacadas */
-  background: #e0f2ff; /* Fondo azul pálido para resaltar */
-  color: #1a535c; /* Un azul verdoso oscuro para el texto */
+  border-color: var(--brand2); /* El rosa coral vibrante para las pastillas destacadas */
+  background: #ffe3e3; /* Fondo rosa pálido para resaltar */
+  color: #8c0000; /* Un rojo oscuro para el texto, que contraste bien */
 }
 .cards{
   display: grid;
@@ -129,13 +129,13 @@ body{
   gap: 10px;
 }
 .card.border-blue{
-  border-color: #a2bfe0; /* Un azul cielo más suave para las tarjetas azules */
+  border-color: #a2bfe0; /* Mantenemos un azul suave aquí para variedad */
 }
 .card.border-violet{
-  border-color: #d8c2e0; /* Un lavanda tenue para las tarjetas moradas */
+  border-color: #d8c2e0; /* Un lavanda tenue */
 }
 .card.border-emerald{
-  border-color: #b8e0d4; /* Un verde aguamarina suave para las tarjetas verdes */
+  border-color: #b8e0d4; /* Un verde aguamarina suave */
 }
 .muted{
   color: var(--muted);
@@ -169,8 +169,9 @@ body{
   text-decoration: none;
 }
 .btn.active{
-  border-color: #93bce0; /* Azul suave para los botones activos */
-  background: #e6f2f9; /* Fondo azul claro para los botones activos */
+  border-color: var(--brand); /* El rojo cereza para el borde de los botones activos */
+  background: #fff0f0; /* Fondo rosa casi blanco para los botones activos */
+  color: var(--brand); /* El texto de los botones activos en el rojo principal */
 }
 .repoMeta{
   display: flex;
