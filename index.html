@@ -6,12 +6,12 @@ title: "Javier Reyes Perdomo — CV & Repos"
 <style>
 :root{
   --bg:#d62828; /* Nuestro rojo vibrante de base */
-  --text:#ffffff; /* ¡Todas las letras en blanco! */
+  --text:#ffffff; /* Todas las letras en blanco */
   --muted:#ffb4a2; /* Tono rosado pálido para el texto atenuado */
   --card:#212529; /* Gris muy oscuro (casi negro) para las tarjetas y elementos principales */
   --line:#495057; /* Un gris oscuro para las líneas */
   --brand:#ffc300; /* Amarillo oro brillante para la marca principal */
-  --brand2:#00b4d8; /* Azul cian vibrante para acentos */
+  --brand2:#ff0000; /* ¡Ahora este es el color de las letras que estaban en naranja, un rojo puro y potente! */
   --shadow: 0 16px 50px rgba(0, 0, 0, 0.4); /* Sombra fuerte para dar profundidad */
   --radius: 18px;
   /* Nuevas variables para el patrón */
@@ -55,7 +55,7 @@ body{
 }
 .subtitle{
   margin: 10px 0 0;
-  color: var(--muted); /* El subtítulo seguirá un tono más suave para diferenciar */
+  color: var(--muted); /* El subtítulo sigue un tono más suave */
   font-size: 18px;
 }
 .section{
@@ -84,7 +84,7 @@ body{
   align-items: stretch;
   border-radius: 16px;
   overflow: hidden;
-  border: 2px solid var(--bg);
+  border: 2px solid var(--bg); /* Borde del perfil en el mismo rojo que el fondo */
 }
 .profile img{
   width: 46%;
@@ -109,9 +109,9 @@ body{
   color: var(--text); /* Texto de las pastillas en blanco */
 }
 .pill.featured{
-  border-color: var(--brand2);
-  background: var(--brand2);
-  color: var(--card); /* El texto de las pastillas destacadas lo pondré en gris oscuro para que contraste con el fondo azul cian */
+  border-color: var(--brand2); /* El rojo puro para el borde de las pastillas destacadas */
+  background: var(--brand2); /* Fondo rojo puro */
+  color: var(--card); /* Texto en gris oscuro para un contraste nítido */
 }
 .cards{
   display: grid;
@@ -139,7 +139,7 @@ body{
   gap: 10px;
 }
 .card.border-blue{
-  border-color: var(--brand2);
+  border-color: var(--brand2); /* Usamos el rojo puro para las tarjetas "azules" */
 }
 .card.border-violet{
   border-color: #a76dcf;
@@ -185,7 +185,7 @@ body{
 .btn.active{
   border-color: var(--brand);
   background: var(--brand);
-  color: var(--text); /* Texto del botón activo también en blanco */
+  color: var(--card); /* Texto del botón activo en gris oscuro para un gran contraste */
 }
 .repoMeta{
   display: flex;
