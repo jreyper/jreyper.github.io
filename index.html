@@ -5,15 +5,18 @@ title: "Javier Reyes Perdomo — CV & Repos"
 
 <style>
 :root{
-  --bg:#d62828; /* ¡Un rojo intenso y vibrante para el fondo principal! */
-  --text:#f8f9fa; /* Texto blanco suave para una legibilidad óptima sobre el rojo */
-  --muted:#ffb4a2; /* Un tono rosado pálido para elementos sutiles, que suaviza el rojo */
-  --card:#212529; /* Un gris muy oscuro (casi negro) para las tarjetas y elementos principales, que contrasta súper bien */
-  --line:#495057; /* Un gris oscuro para las líneas, para que no compitan con el rojo y blanco */
-  --brand:#ffc300; /* ¡Un amarillo oro brillante como color de marca principal para destacar! */
-  --brand2:#00b4d8; /* Un azul cian vibrante para acentos, creando un contraste fresco y moderno */
-  --shadow: 0 16px 50px rgba(0, 0, 0, 0.4); /* Sombra fuerte para dar profundidad */
+  --bg:#d62828; /* Nuestro rojo vibrante de base */
+  --text:#f8f9fa; /* Texto blanco suave */
+  --muted:#ffb4a2; /* Tono rosado pálido para el texto atenuado */
+  --card:#212529; /* Gris muy oscuro para las tarjetas */
+  --line:#495057; /* Gris oscuro para las líneas */
+  --brand:#ffc300; /* Amarillo oro brillante */
+  --brand2:#00b4d8; /* Azul cian vibrante */
+  --shadow: 0 16px 50px rgba(0, 0, 0, 0.4); /* Sombra fuerte */
   --radius: 18px;
+  /* Nuevas variables para el patrón */
+  --pattern-color: rgba(0, 0, 0, 0.1); /* Color del patrón, un negro semitransparente */
+  --pattern-size: 20px; /* Tamaño de la "celda" del patrón */
 }
 *{
   box-sizing:border-box;
@@ -21,8 +24,14 @@ title: "Javier Reyes Perdomo — CV & Repos"
 body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-  background: var(--bg);
+  background-color: var(--bg); /* Fondo base rojo */
   color: var(--text);
+  /* Patrón de fondo usando múltiples gradientes */
+  background-image:
+    linear-gradient(45deg, var(--pattern-color) 25%, transparent 25%, transparent 75%, var(--pattern-color) 75%, var(--pattern-color)),
+    linear-gradient(-45deg, var(--pattern-color) 25%, transparent 25%, transparent 75%, var(--pattern-color) 75%, var(--pattern-color));
+  background-size: var(--pattern-size) var(--pattern-size); /* Tamaño del patrón */
+  background-position: 0 0, calc(var(--pattern-size) / 2) calc(var(--pattern-size) / 2); /* Desplazamiento para el patrón */
 }
 .container{
   max-width: 1100px;
@@ -38,7 +47,7 @@ body{
   border: 2px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  background: var(--card); /* El topbar en el gris oscuro de la tarjeta */
+  background: var(--card);
 }
 .title{
   font-size: 44px;
@@ -54,7 +63,7 @@ body{
   padding: 22px;
   border: 2px solid var(--line);
   border-radius: var(--radius);
-  background: var(--card); /* Todas las secciones con el fondo de tarjeta gris oscuro */
+  background: var(--card);
 }
 .grid2{
   display: grid;
@@ -75,7 +84,7 @@ body{
   align-items: stretch;
   border-radius: 16px;
   overflow: hidden;
-  border: 2px solid var(--brand); /* Borde de la imagen en amarillo brillante */
+  border: 2px solid var(--brand);
 }
 .profile img{
   width: 46%;
@@ -100,9 +109,9 @@ body{
   color: var(--text);
 }
 .pill.featured{
-  border-color: var(--brand2); /* El azul cian vibrante para el borde de las pastillas destacadas */
-  background: var(--brand2); /* Fondo azul cian vibrante */
-  color: var(--card); /* Texto en gris oscuro para un contraste nítido */
+  border-color: var(--brand2);
+  background: var(--brand2);
+  color: var(--card);
 }
 .cards{
   display: grid;
@@ -130,13 +139,13 @@ body{
   gap: 10px;
 }
 .card.border-blue{
-  border-color: var(--brand2); /* Usamos el azul cian para las tarjetas "azules" */
+  border-color: var(--brand2);
 }
 .card.border-violet{
-  border-color: #a76dcf; /* Un púrpura vivo para las "violetas" */
+  border-color: #a76dcf;
 }
 .card.border-emerald{
-  border-color: #5cb85c; /* Un verde vibrante para las "verdes" */
+  border-color: #5cb85c;
 }
 .muted{
   color: var(--muted);
@@ -154,29 +163,29 @@ body{
   padding: 10px 12px;
   border-radius: 12px;
   border: 2px solid var(--line);
-  background: var(--card); /* Fondo del input en gris oscuro */
+  background: var(--card);
   color: var(--text);
 }
 .select{
   padding: 10px 12px;
   border-radius: 12px;
   border: 2px solid var(--line);
-  background: var(--card); /* Fondo del select en gris oscuro */
+  background: var(--card);
   color: var(--text);
 }
 .btn{
   padding: 10px 12px;
   border-radius: 12px;
   border: 2px solid var(--line);
-  background: var(--card); /* Fondo del botón en gris oscuro */
+  background: var(--card);
   color: var(--text);
   cursor: pointer;
   text-decoration: none;
 }
 .btn.active{
-  border-color: var(--brand); /* Borde del botón activo en amarillo */
-  background: var(--brand); /* Fondo del botón activo en amarillo */
-  color: var(--card); /* Texto del botón activo en gris oscuro para un gran contraste */
+  border-color: var(--brand);
+  background: var(--brand);
+  color: var(--card);
 }
 .repoMeta{
   display: flex;
